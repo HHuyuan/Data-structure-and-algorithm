@@ -60,12 +60,12 @@ public class heap_sort {
 		int[] a = {0,1,5,23,65,35,2,100,68,57,87,76};
        
 		int[] c = initial_maxheap(a);
-		System.out.println("调整为最大堆:");
+		System.out.println("Max heap:");
 		for (int i = 1; i < c.length; i++) {
 			System.out.print(c[i]+" ");
 		}
 		System.out.println();
-		System.out.println("排序后:");
+		System.out.println("Sorting:");
 		int[] d = maxheap_sort(c);
 		for (int i = 1; i < d.length; i++) {
 			System.out.print(d[i]+" ");

@@ -22,14 +22,13 @@ public class tournament_sort {
 			nNodes *= 2;
 		}
 		
-		nTreeSize = 2 * nNodes - 1;//竞赛树节点的个数, nNode算出来是为了做成满二叉树
-	
-		Node[] nodes = new Node[nTreeSize];//竞赛树用数组存储	
+		nTreeSize = 2 * nNodes - 1;
+		Node[] nodes = new Node[nTreeSize];
 		
 		int i;
 		int idx;
 		
-		for( i = nNodes - 1; i < nTreeSize; i++){ //初始化竞赛树数据
+		for( i = nNodes - 1; i < nTreeSize; i++){ 
 			idx = i - (nNodes - 1); 
 			if(idx < a.length){
 				nodes[i] = new Node(a[idx], i); 
